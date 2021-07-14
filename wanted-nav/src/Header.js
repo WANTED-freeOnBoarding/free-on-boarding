@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import Container from "./Container";
 import SlideBar from "./SlideBar";
@@ -12,13 +13,23 @@ function Header(isHover, setIsHover, HandleMouseOver) {
     <div>
       <Container>
         <Logo>
-          <div class="logo__btn">
+          <h2>
             <a href="https://www.wanted.co.kr/wdlist?country=kr&job_sort=job.latest_order&years=0&locations=all">
               wanted
             </a>
-          </div>
+          </h2>
         </Logo>
+
         <NavItems>
+          <ResponsivHome>
+            <a
+              class="slider"
+              style={styledSlider}
+              href="https://www.wanted.co.kr/wdlist?country=kr&job_sort=job.latest_order&years=0&locations=all"
+            >
+              홈
+            </a>
+          </ResponsivHome>
           <NavItem>
             <a
               class="slider"
@@ -33,28 +44,28 @@ function Header(isHover, setIsHover, HandleMouseOver) {
               커리어 성장
             </a>
           </NavItem>
-          <NavItem>
+          <ResponsivNavItem>
             <a href="https://www.wanted.co.kr/wdlist?country=kr&job_sort=job.latest_order&years=0&locations=all">
               직군별 연봉
             </a>
-          </NavItem>
-          <NavItem>
+          </ResponsivNavItem>
+          <ResponsivNavItem>
             <a href="https://www.wanted.co.kr/wdlist?country=kr&job_sort=job.latest_order&years=0&locations=all">
               이력서
             </a>
-          </NavItem>
-          <NavItem>
+          </ResponsivNavItem>
+          <ResponsivNavItem>
             <a href="https://www.wanted.co.kr/wdlist?country=kr&job_sort=job.latest_order&years=0&locations=all">
               매치업
             </a>
-          </NavItem>
-          <NavItem>
+          </ResponsivNavItem>
+          <ResponsivNavItem>
             <a href="https://www.wanted.co.kr/wdlist?country=kr&job_sort=job.latest_order&years=0&locations=all">
               프리랜서
             </a>
-          </NavItem>
+          </ResponsivNavItem>
         </NavItems>
-        <div class="info-items">
+        <InfoItems>
           <Icons>
             <Icon>
               <FontAwesomeIcon icon={faSearch} />
@@ -65,12 +76,15 @@ function Header(isHover, setIsHover, HandleMouseOver) {
             <Icon>
               <FontAwesomeIcon icon={faUser} />
             </Icon>
-            <Icon>|</Icon>
-            <div class="service">
-              <ServiceBTN>기업 서비스</ServiceBTN>
-            </div>
+            <Bar>
+              <FontAwesomeIcon icon={faBars} />
+            </Bar>
           </Icons>
-        </div>
+          <ResponsivIcons>
+            <Icon>|</Icon>
+            <ServiceBTN>기업 서비스</ServiceBTN>
+          </ResponsivIcons>
+        </InfoItems>
       </Container>
       {isHover && (
         <SlideBar
@@ -85,14 +99,31 @@ function Header(isHover, setIsHover, HandleMouseOver) {
 
 const Logo = styled("div")`
   margin: 0.5rem;
+  @media screen and (max-width: 825px) {
+    display: none;
+  }
 `;
 
 const NavItems = styled("div")`
   display: flex;
+  font-weight: 800;
 `;
 
 const NavItem = styled("div")`
   margin: 0.5rem;
+`;
+
+const ResponsivNavItem = styled("div")`
+  margin: 0.5rem;
+  font-weight: 800;
+  @media screen and (max-width: 825px) {
+    display: none;
+  }
+`;
+
+const InfoItems = styled("div")`
+  display: flex;
+  align-items: baseline;
 `;
 
 const Icons = styled("div")`
@@ -102,6 +133,29 @@ const Icons = styled("div")`
 
 const Icon = styled("div")`
   margin: 1rem;
+`;
+
+const ResponsivIcons = styled("div")`
+  margin: 1rem;
+  display: flex;
+  @media screen and (max-width: 825px) {
+    display: none;
+  }
+`;
+
+const Bar = styled("div")`
+  margin: 1rem;
+  @media screen and (min-width: 825px) {
+    display: none;
+  }
+`;
+
+const ResponsivHome = styled("div")`
+  margin: 0.5rem 1rem;
+  font-weight: 800;
+  @media screen and (min-width: 825px) {
+    display: none;
+  }
 `;
 
 const ServiceBTN = styled("button")`

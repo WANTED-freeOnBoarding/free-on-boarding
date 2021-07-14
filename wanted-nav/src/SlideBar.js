@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import Container from "./Container";
 
 function SlideBar(isHover, setIsHover, HandleMouseOver) {
   return (
-    <Container>
+    <Wrapper>
       <Categories>
         <Category>
           <CategoryHeader>
@@ -222,9 +221,18 @@ function SlideBar(isHover, setIsHover, HandleMouseOver) {
           <a href="#">공공·복지</a>
         </CategoryHeader>
       </BigCategories>
-    </Container>
+    </Wrapper>
   );
 }
+
+const Wrapper = styled("div")`
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  @media screen and (max-width: 825px) {
+    display: none;
+  }
+`;
 
 const Categories = styled("div")`
   display: flex;
