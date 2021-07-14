@@ -11,35 +11,27 @@ function SlideBar() {
             </a>
           </CategoryHeader>
           <Content>
-            {" "}
-            <a href="#">기업영업 </a>
+            <a href="#">기업영업</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">외부영업</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">영업 관리자</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">기술 영업</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">주요고객사 담당자</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">솔루션 컨설턴트</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">해외영업</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">더보기</a>
           </Content>
         </Category>
@@ -50,35 +42,27 @@ function SlideBar() {
             </a>
           </CategoryHeader>
           <Content>
-            {" "}
             <a href="#">콘텐츠 크리에이터</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">PD</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">영상 편집가</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">에디터</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">비디오 제작</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">작가</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">출판 기획자</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">더보기</a>
           </Content>
         </Category>
@@ -90,35 +74,27 @@ function SlideBar() {
           </CategoryHeader>
 
           <Content>
-            {" "}
             <a href="#">인사담당</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">리크루터</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">조직문화</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">평가·보상</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">헤드헌터</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">HRBP</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">HRD</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">더보기</a>
           </Content>
         </Category>
@@ -129,35 +105,27 @@ function SlideBar() {
             </a>
           </CategoryHeader>
           <Content>
-            {" "}
             <a href="#">게임 기획자</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">게임 그래픽 디자이너</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">모바일 게임 개발자</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">게임 클라이언트 개발자</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">게임 아티스트</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">게임 서버 개발자</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">유니티 개발자</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">더보기</a>
           </Content>
         </Category>
@@ -168,35 +136,27 @@ function SlideBar() {
             </a>
           </CategoryHeader>
           <Content>
-            {" "}
             <a href="#">회계담당</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">재무 담당자</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">IR</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">투자·증권</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">재무 분석가</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">애널리스트</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">내부통제 담당자</a>
           </Content>
           <Content>
-            {" "}
             <a href="#">더보기</a>
           </Content>
         </Category>

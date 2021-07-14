@@ -89,9 +89,9 @@ function Header({ isHover, setIsHover, handleMouseOn, handleMouseOff }) {
             <Icon>
               <FontAwesomeIcon icon={faBell} />
             </Icon>
-            <Icon>
+            <ResponsivIcons>
               <FontAwesomeIcon icon={faUser} />
-            </Icon>
+            </ResponsivIcons>
             <Bar>
               <FontAwesomeIcon icon={faBars} />
             </Bar>
