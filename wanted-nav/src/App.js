@@ -41,7 +41,6 @@ function App() {
         >
           Learn React
         </a>
-        <button onMouseEnter={() => console.log("babo")}>메롱</button>
       </header>
     </div>
   );
