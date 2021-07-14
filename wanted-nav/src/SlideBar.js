@@ -239,10 +239,23 @@ const Wrapper = styled("div")`
   display: flex;
   justify-content: space-around;
   align-items: baseline;
-  position: fixed;
-  background-color: white;
+  /*background-color: white;*/
   width: 100vw;
   z-index: 1;
+
+  animation-duration: 1s;
+  animation-name: slidein;
+
+  @keyframes slidein {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
   @media screen and (max-width: 825px) {
     display: none;
   }

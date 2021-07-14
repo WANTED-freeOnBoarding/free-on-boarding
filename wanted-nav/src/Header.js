@@ -72,6 +72,7 @@ function Header({ isHover, setIsHover, handleMouseOn, handleMouseOff }) {
           </ResponsivNavItem>
           <ResponsivNavItem>
             <a
+              rel="noreferrer"
               href="https://www.wanted.co.kr/gigs/experts"
               target="_blank"
               onMouseEnter={() => handleMouseOff(isHover)}
@@ -97,7 +98,11 @@ function Header({ isHover, setIsHover, handleMouseOn, handleMouseOff }) {
           </Icons>
           <ResponsivIcons>
             <Icon>|</Icon>
-            <ServiceBTN>기업 서비스</ServiceBTN>
+            <ServiceBTN>
+              <a href="https://www.wanted.co.kr/dashboard/companyregister">
+                기업 서비스
+              </a>
+            </ServiceBTN>
           </ResponsivIcons>
         </InfoItems>
       </Container>
