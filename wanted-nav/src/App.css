@@ -37,6 +37,19 @@
   }
 }
 
-a {
+a:link {
+  color: blue;
   text-decoration: none;
+}
+a:visited {
+  color: grey;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  text-decoratian: underline;
+}
+a:active {
+  color: lime;
+  text-decoraaion: none;
 }

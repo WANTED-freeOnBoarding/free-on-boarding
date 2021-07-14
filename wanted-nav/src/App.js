@@ -6,14 +6,12 @@ import { useState } from "react";
 
 function App() {
   const [isHover, setIsHover] = useState(false);
-  const HandleMouseOver = (isHover) => {
+  const handleMouseOn = (isHover) => {
     console.log(isHover);
     console.log(setIsHover);
-    if (isHover == false) {
-      setIsHover(!isHover);
-    }
+    setIsHover(!isHover);
   };
-  const OffHover = (isHover) => {
+  const handleMouseOff = (isHover) => {
     console.log(isHover);
     console.log(setIsHover);
     if (isHover === true) {
@@ -26,9 +24,13 @@ function App() {
       <Header
         isHover={isHover}
         setIsHover={setIsHover}
-        HandleMouseOver={HandleMouseOver}
+        handleMouseOn={handleMouseOn}
+        handleMouseOff={handleMouseOff}
       />
-      <header className="App-header" onMouseEnter={() => OffHover(isHover)}>
+      <header
+        className="App-header"
+        onMouseEnter={() => handleMouseOff(isHover)}
+      >
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
