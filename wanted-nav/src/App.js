@@ -6,18 +6,29 @@ import { useState } from "react";
 
 function App() {
   const [isHover, setIsHover] = useState(false);
+  const HandleMouseOver = (isHover) => {
+    console.log(isHover);
+    console.log(setIsHover);
+    if (isHover == false) {
+      setIsHover(!isHover);
+    }
+  };
+  const OffHover = (isHover) => {
+    console.log(isHover);
+    console.log(setIsHover);
+    if (isHover === true) {
+      setIsHover(!isHover);
+    }
+  };
 
-  function HandleMouseOver() {
-    return setIsHover(!isHover);
-  }
   return (
     <div className="App">
       <Header
         isHover={isHover}
         setIsHover={setIsHover}
-        onMouseEnter={() => HandleMouseOver()}
+        HandleMouseOver={HandleMouseOver}
       />
-      <header className="App-header">
+      <header className="App-header" onMouseEnter={() => OffHover(isHover)}>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -30,6 +41,7 @@ function App() {
         >
           Learn React
         </a>
+        <button onMouseEnter={() => console.log("babo")}>메롱</button>
       </header>
     </div>
   );

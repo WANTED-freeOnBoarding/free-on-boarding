@@ -8,15 +8,13 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Container from "./Container";
 import SlideBar from "./SlideBar";
 
-function Header(isHover, setIsHover, HandleMouseOver) {
+function Header({ isHover, setIsHover, HandleMouseOver }) {
   return (
     <div>
       <Container>
         <Logo>
           <h2>
-            <a href="https://www.wanted.co.kr/wdlist?country=kr&job_sort=job.latest_order&years=0&locations=all">
-              wanted
-            </a>
+            <a href="https://www.wanted.co.kr/">wanted</a>
           </h2>
         </Logo>
 
@@ -25,7 +23,7 @@ function Header(isHover, setIsHover, HandleMouseOver) {
             <a
               class="slider"
               style={styledSlider}
-              href="https://www.wanted.co.kr/wdlist?country=kr&job_sort=job.latest_order&years=0&locations=all"
+              href="https://www.wanted.co.kr/"
             >
               홈
             </a>
@@ -35,32 +33,27 @@ function Header(isHover, setIsHover, HandleMouseOver) {
               class="slider"
               style={styledSlider}
               href="https://www.wanted.co.kr/wdlist?country=kr&job_sort=job.latest_order&years=0&locations=all"
+              onMouseEnter={() => HandleMouseOver(isHover)}
             >
               탐색
             </a>
           </NavItem>
           <NavItem>
-            <a href="https://www.wanted.co.kr/wdlist?country=kr&job_sort=job.latest_order&years=0&locations=all">
-              커리어 성장
-            </a>
+            <a href="https://www.wanted.co.kr/events">커리어 성장</a>
           </NavItem>
           <ResponsivNavItem>
-            <a href="https://www.wanted.co.kr/wdlist?country=kr&job_sort=job.latest_order&years=0&locations=all">
-              직군별 연봉
-            </a>
+            <a href="https://www.wanted.co.kr/salary">직군별 연봉</a>
           </ResponsivNavItem>
           <ResponsivNavItem>
-            <a href="https://www.wanted.co.kr/wdlist?country=kr&job_sort=job.latest_order&years=0&locations=all">
-              이력서
-            </a>
+            <a href="https://www.wanted.co.kr/cv">이력서</a>
           </ResponsivNavItem>
           <ResponsivNavItem>
-            <a href="https://www.wanted.co.kr/wdlist?country=kr&job_sort=job.latest_order&years=0&locations=all">
+            <a href="https://www.wanted.co.kr/matchup/intro?from_gnb=true">
               매치업
             </a>
           </ResponsivNavItem>
           <ResponsivNavItem>
-            <a href="https://www.wanted.co.kr/wdlist?country=kr&job_sort=job.latest_order&years=0&locations=all">
+            <a href="https://www.wanted.co.kr/gigs/experts" target="_blank">
               프리랜서
             </a>
           </ResponsivNavItem>
@@ -86,13 +79,7 @@ function Header(isHover, setIsHover, HandleMouseOver) {
           </ResponsivIcons>
         </InfoItems>
       </Container>
-      {isHover && (
-        <SlideBar
-          isHover={isHover}
-          setIsHover={setIsHover}
-          onMouseLeave={() => HandleMouseOver()}
-        />
-      )}
+      {isHover && <SlideBar onMouseLeave={() => HandleMouseOver(isHover)} />}
     </div>
   );
 }

@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
-function SlideBar(isHover, setIsHover, HandleMouseOver) {
+function SlideBar() {
   return (
     <Wrapper>
       <Categories>
         <Category>
           <CategoryHeader>
-            <a href="#">영업</a>
+            <a href="https://www.wanted.co.kr/wdlist/530?country=kr&job_sort=job.latest_order&years=0&locations=all">
+              영업
+            </a>
           </CategoryHeader>
           <Content>
             {" "}
@@ -43,7 +45,9 @@ function SlideBar(isHover, setIsHover, HandleMouseOver) {
         </Category>
         <Category>
           <CategoryHeader>
-            <a href="#">미디어</a>
+            <a href="https://www.wanted.co.kr/wdlist/524?country=kr&job_sort=job.latest_order&years=0&locations=all">
+              미디어
+            </a>
           </CategoryHeader>
           <Content>
             {" "}
@@ -80,7 +84,9 @@ function SlideBar(isHover, setIsHover, HandleMouseOver) {
         </Category>
         <Category>
           <CategoryHeader>
-            <a href="#">인사</a>
+            <a href="https://www.wanted.co.kr/wdlist/517?country=kr&job_sort=job.latest_order&years=0&locations=all">
+              인사
+            </a>
           </CategoryHeader>
 
           <Content>
@@ -118,7 +124,9 @@ function SlideBar(isHover, setIsHover, HandleMouseOver) {
         </Category>
         <Category>
           <CategoryHeader>
-            <a href="#">게임 제작</a>
+            <a href="https://www.wanted.co.kr/wdlist/959?country=kr&job_sort=job.latest_order&years=0&locations=all">
+              게임 제작
+            </a>
           </CategoryHeader>
           <Content>
             {" "}
@@ -155,7 +163,9 @@ function SlideBar(isHover, setIsHover, HandleMouseOver) {
         </Category>
         <Category>
           <CategoryHeader>
-            <a href="#">금융</a>
+            <a href="https://www.wanted.co.kr/wdlist/508?country=kr&job_sort=job.latest_order&years=0&locations=all">
+              금융
+            </a>
           </CategoryHeader>
           <Content>
             {" "}
@@ -229,6 +239,10 @@ const Wrapper = styled("div")`
   display: flex;
   justify-content: space-around;
   align-items: baseline;
+  position: fixed;
+  background-color: white;
+  width: 100vw;
+  z-index: 1;
   @media screen and (max-width: 825px) {
     display: none;
   }
